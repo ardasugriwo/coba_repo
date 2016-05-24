@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>b</title>
+	<script src="/udraya_web/js/jquery.js"></script>
+</head>
+<body>
+	<input id="in1" name="in1" value="pizza" /><br />
+<input id="in2" name="in2" value="chips" /><br />
+<input id="in3" name="in3" value="beer" /><br />
+
+<input id="check1" name="check1" type="checkbox" />
+
+<script>
+$('#check1').on('click', function () {
+    if (!$(this).is(':checked')) {
+        $('#in1, #in2').val('');
+    }
+});
+</script>
+</body>
+</html>
